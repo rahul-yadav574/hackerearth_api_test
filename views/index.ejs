@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='stylesheets/style.css' />
+  </head>
+  <body>
+
+  <h1>Welcome To HackeEearth Api Test</h1>
+ <h3>You Have Follow These Steps</h3>
+  <ol>
+      <li>Choose A Language From The Dropdown</li>
+      <li>Select You Want To Run Or Compile</li>
+      <li>Put Your Source Code In The Space Provided</li>
+      <li>Hit Submit And Get Result</li>
+  </ol>
+
+  <h3>Select Language : </h3>
+  <select title="languageselect" name="languageselect" form="sourceform">
+
+
+      <!--C, CPP, CPP11, CLOJURE, CSHARP, JAVA, JAVASCRIPT, HASKELL, PERL, PHP, PYTHON, RUBY-->
+      <option>C</option>
+      <option>CPP</option>
+      <option>CPP11</option>
+      <option>CLOJURE</option>
+      <option>CSHARP</option>
+      <option>JAVA</option>
+      <option>JAVASCRIPT</option>
+      <option>HASKELL</option>
+      <option>PERL</option>
+      <option>PHP</option>
+      <option>PYTHON</option>
+      <option>RUBY</option>
+
+
+  </select>
+
+  <select title="typeselect" name="typeselect" id="typeselect" form="sourceform"><option>COMPILE</option><option>RUN</option></select>
+
+  <h3>Put Your Source Code Here : </h3>
+
+  <form id="sourceform" action="" method="post">
+    <input title="sourcecode" aria-multiline="true" size="100"  name="sourcecode" id="sourcecode" placeholder="Copy Your Source Code Or Write here:" width="1000px"/>
+    <input type="submit" title="Compile My Code" name="submitcode" id="submitcode"/>
+  </form>
+
+  <br>
+
+
+
+
+  </body>
+</html>
