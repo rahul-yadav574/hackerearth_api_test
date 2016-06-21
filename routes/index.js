@@ -35,11 +35,10 @@ router.post('/',function (req,res,next) {
         form:dataStr
 
     },function (error,response,body) {
-            config.respons = body;
+           res.render('result',{title:'Response',data:body});
 
     });
 
-    res.redirect('/result');
 
 });
 
